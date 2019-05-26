@@ -45,3 +45,49 @@ console.log(obj);
 {key1: "value1", key2: "value2"}
 ```
 
+### Converting string into array of strings
+
+* str.split() function is used to split the given string into array of strings by separating it into substrings using a specified separator provided in the argument.  
+
+```
+str.split(separator, limit)
+```
+
+###### paramters: This function accepts three parameters as mentioned above and described below:
+
+- str: This parameter holds the string to be split.
+- separator: It is optional parameter. It defines the character or the regular expression to use for breaking the string. If not used, the same string is returned (single item array).
+- limit: It is optional parameter. It is an integer which specifies the number of splits. All the items after limit are discarded.
+
+```
+var fruits = 'apple, orange, pear, banana, raspberry, peach';
+var ar = fruits.split(', '); // split string on comma and space
+console.log( ar );
+
+var str = "How are you doing today?";
+var res = str.split(" "); // split string on space
+console.log( res );
+
+
+var text1 = "text1";
+var text2 = "text2";
+var arr = [text1, text2];
+console.log(arr);
+
+
+var k = ["1", "2", "3", "4", "5", "6"];
+var x = [];
+var m = k.map(function(n){
+	x = [...x, n];
+})
+console.log(x);
+```
+
+#### Output:
+```
+["apple", "orange", "pear", "banana", "raspberry", "peach"]
+["How", "are", "you", "doing", "today?"]
+["text1", "text2"]
+["1", "2", "3", "4", "5", "6"]
+```
+
