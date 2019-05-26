@@ -175,8 +175,11 @@ value :  20
 var value = 1235;
 var obj = {"num" : value};
 console.log(obj);
-``
+
+```
+
 #### Output:
+
 ```
 {num: 1235}
 ```
