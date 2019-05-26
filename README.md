@@ -242,3 +242,27 @@ John
 Australia
 {"name":"John","age":30,"city":"New York"}
 ```
+
+
+### Converting array to number
+```
+var arr = [ 1, 2, 3, 4 ];
+console.log(arr[0]);
+console.log(arr[2]);
+
+
+for (i=0; i<arr.length;i++){
+	console.log("value : ", arr[i]);
+}
+
+```
+
+#### Output:
+```
+1
+3
+value :  1
+value :  2
+value :  3
+value :  4
+```
