@@ -184,4 +184,21 @@ console.log(obj);
 {num: 1235}
 ```
 
+### Converting numbers to array
+
+```
+var num1 = '1, 2, 3, 4, 5, 6';
+var arr = num1.split(', ').map(Number);
+console.log( arr );
+
+var num2 = "12345678";
+var res = num2.split('').map(Number);
+console.log( res );
+```
+
+#### Output:
+```
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5, 6, 7, 8]
+```
 
