@@ -30,3 +30,18 @@ using parseInt():  NaN 1234 1234 1234
 using parseFloat():  NaN 1234 1234.3456 1234
 using Number():  NaN 1234 1234.3456 NaN
 ```
+
+### Converting JSON string into Object
+* A JSON object is a key-value data format that is typically rendered in curly braces. JSON object consist of curly braces ( { } ) at the either ends and have key-value pairs inside the braces. The JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string.
+
+```
+var txt = '{"key1" : "value1", "key2" : "value2"}';
+var obj = JSON.parse(txt);
+console.log(obj);
+``` 
+
+#### Output:
+```
+{key1: "value1", key2: "value2"}
+```
+
