@@ -169,5 +169,16 @@ value :  20
 ```
 
 
+### Converting numbers to object
+
+```
+var value = 1235;
+var obj = {"num" : value};
+console.log(obj);
+``
+#### Output:
+```
+{num: 1235}
+```
 
 
