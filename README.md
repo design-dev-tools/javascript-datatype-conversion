@@ -202,3 +202,20 @@ console.log( res );
 [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
+### Converting object to numbers
+```
+var obj = { "age": 12, "contact" : {"num" : 234567} };
+
+var age = obj.age;
+console.log(age);
+
+var num = obj.contact.num;
+console.log(num);
+
+```
+
+#### Output:
+```
+12
+234567
+```
