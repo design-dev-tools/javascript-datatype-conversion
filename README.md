@@ -219,3 +219,20 @@ console.log(num);
 12
 234567
 ```
+
+### Converting object to string
+```
+var obj = { "name": "John", "address" : {"country" : "Australia"} };
+
+var name = obj.name;
+console.log(name);
+
+var country = obj.address.country;
+console.log(country);
+```
+
+#### Output:
+```
+John
+Australia
+```
