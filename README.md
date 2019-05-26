@@ -229,10 +229,16 @@ console.log(name);
 
 var country = obj.address.country;
 console.log(country);
+
+var obj = { name: "John", age: 30, city: "New York" };
+var myJSON = JSON.stringify(obj);
+console.log(myJSON);
+
 ```
 
 #### Output:
 ```
 John
 Australia
+{"name":"John","age":30,"city":"New York"}
 ```
