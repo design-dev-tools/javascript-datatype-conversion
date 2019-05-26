@@ -266,3 +266,28 @@ value :  2
 value :  3
 value :  4
 ```
+### Converting array to string
+```
+var arr = [ "John", "Peter", "Sally", "Jane" ];
+console.log(arr[0]);
+console.log(arr[3]);
+
+var myJSON = JSON.stringify(arr);
+console.log(myJSON);
+
+for (i=0; i<arr.length;i++){
+	console.log("value : ", arr[i]);
+}
+
+```
+
+#### Output:
+```
+John
+Jane
+["John","Peter","Sally","Jane"]
+value :  John
+value :  Peter
+value :  Sally
+value :  Jane
+```
