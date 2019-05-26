@@ -91,3 +91,40 @@ console.log(x);
 ["1", "2", "3", "4", "5", "6"]
 ```
 
+### Converting numbers to strings
+
+* The .toString() method that belongs to the Number.prototype object, takes an integer or floating point number and converts it into a String type. There are multiple ways of calling this method. If a number (base) is passed as a parameter to the .toString() method, the number will be parsed and converted to that base number.
+
+* The String() method creates a primitive String type for the number that is passed to it. The main difference here is that the String object does not do any base conversions like Number.toString() does.
+
+```
+var a = 20;
+
+var srt1 = a.toString(); 
+console.log("data type: ",typeof(srt1));
+console.log("value : ",  srt1);
+   
+var srt2 = a.toString(2);
+console.log("data type: ",typeof(srt2));
+console.log("value : ",  srt2);
+
+
+var srt3 = String(a);    
+console.log("data type: ",typeof(srt1));
+console.log("value : ",  srt3);
+
+```
+
+#### Output: 
+```
+data type:  string
+value :  20
+data type:  string
+value :  10100
+data type:  string
+value :  20
+```
+
+
+
+
